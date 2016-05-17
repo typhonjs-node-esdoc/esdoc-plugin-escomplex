@@ -44,7 +44,7 @@ export function onStart(ev)
 // }
 
 /**
- * Must save tags to eventually feed GraphDocBuilder with taffydb converted data.
+ * Must save tags to eventually feed ReportDocBuilder with taffydb converted data.
  *
  * @param {object}   ev - Event from ESDoc containing data field
  */
