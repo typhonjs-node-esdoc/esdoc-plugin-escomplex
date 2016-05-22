@@ -1,5 +1,5 @@
-import core    from 'escomplex/src/core.js';
-import walker  from 'escomplex/src/walker.js';
+import core    from 'escomplex-core/src/core.js';
+import walker  from 'escomplex-core/src/walker.js';
 
 /**
  * Provides a direct entry point into ESComplex to process AST generated via Espree / ESDoc.
