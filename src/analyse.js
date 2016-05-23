@@ -1,4 +1,4 @@
-import core    from 'escomplex-core/src/core.js';
+import module  from 'escomplex-core/src/module.js';
 import walker  from 'escomplex-core/src/walker.js';
 
 /**
@@ -10,5 +10,5 @@ import walker  from 'escomplex-core/src/walker.js';
  */
 export default function analyse(ast, options)
 {
-   return core.analyse(ast, walker, options);
+   return module.analyse(ast, walker, options);
 }
