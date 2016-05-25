@@ -9,7 +9,7 @@
 // import path       from 'path';
 // import { taffy }  from 'taffydb';
 
-import analyse    from './analyse.js';
+import escomplex     from 'escomplex-core';
 
 // Must store ESDoc configuration file and options to use later with ReportDocBuilder.
 // let config;
@@ -62,7 +62,7 @@ export function onStart(ev)
  {
     try
     {
-       const result = analyse(ev.data.ast);
+       const result = escomplex.analyse(ev.data.ast);
        console.log(`esdoc-plugin-escomplex - onHandleAST - result: ${JSON.stringify(result)}`);
     }
     catch (err)
