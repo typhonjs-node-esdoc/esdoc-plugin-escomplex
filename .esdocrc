@@ -1,5 +1,5 @@
 {
-   "title": "esdoc-plugin-jspm-dependency-graph",
+   "title": "esdoc-plugin-escomplex",
    "source": "src",
    "destination": "docs",
    "plugins":
