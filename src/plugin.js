@@ -62,7 +62,7 @@ export function onStart(ev)
  {
     try
     {
-       const result = escomplex.analyse(ev.data.ast);
+       const result = escomplex.analyze(ev.data.ast);
        console.log(`esdoc-plugin-escomplex - onHandleAST - result: ${JSON.stringify(result)}`);
     }
     catch (err)

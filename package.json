@@ -1,6 +1,6 @@
 {
   "name": "esdoc-plugin-escomplex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/typhonjs-node-esdoc/esdoc-plugin-escomplex/",
   "description": "A plugin for ESDoc that produces complexity analysis reports via escomplex.",
   "license": "MPL-2.0",
@@ -14,7 +14,8 @@
   "maintainers": [
     {
       "name": "Mike Leahy",
-      "email": "support@typhonjs.io"
+      "email": "support@typhonjs.io",
+      "url": "https://github.com/typhonrt"
     }
   ],
   "dependencies": {
@@ -27,7 +28,7 @@
   "devDependencies": {
     "jspm": "^0.16.0",
     "typhonjs-config-eslint": "^0.4.0",
-    "typhonjs-npm-build-test": "^0.1.0"
+    "typhonjs-npm-build-test": "^0.3.0"
   },
   "scripts": {
     "build": "babel-node ./node_modules/typhonjs-npm-scripts-build-babel/scripts/build.js",
