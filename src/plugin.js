@@ -9,7 +9,7 @@
 // import path       from 'path';
 // import { taffy }  from 'taffydb';
 
-import escomplex     from 'escomplex-core';
+import escomplex     from 'typhonjs-escomplex-module';
 
 // Must store ESDoc configuration file and options to use later with ReportDocBuilder.
 // let config;

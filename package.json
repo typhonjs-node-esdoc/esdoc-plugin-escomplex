@@ -1,8 +1,8 @@
 {
   "name": "esdoc-plugin-escomplex",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/typhonjs-node-esdoc/esdoc-plugin-escomplex/",
-  "description": "A plugin for ESDoc that produces complexity analysis reports via escomplex.",
+  "description": "A plugin for ESDoc that produces complexity analysis reports via typhonjs-escomplex.",
   "license": "MPL-2.0",
   "author": {
     "name": "Mike Leahy"
@@ -20,10 +20,10 @@
   ],
   "dependencies": {
     "cheerio": "^0.20.0",
-    "escomplex-core": "git+https://git@github.com/typhonjs-node-escomplex/escomplex-core.git",
     "fs-extra": "^0.30.0",
     "ice-cap": "^0.0.4",
-    "taffydb": "^2.0.0"
+    "taffydb": "^2.0.0",
+    "typhonjs-escomplex-module": "git+https://git@github.com/typhonjs-node-escomplex/typhonjs-escomplex-module.git"
   },
   "devDependencies": {
     "jspm": "^0.16.0",
