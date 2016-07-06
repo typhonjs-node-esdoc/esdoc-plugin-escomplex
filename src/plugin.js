@@ -2,11 +2,9 @@
  * esdoc-plugin-escomplex -- In development / creates complexity analysis reports with ESComplex.
  */
 
-'use strict';
-
 // import cheerio    from 'cheerio';
 // import fs         from 'fs-extra';
-// import path       from 'path';
+ import path       from 'path';
 // import { taffy }  from 'taffydb';
 
 import escomplex     from 'typhonjs-escomplex-module';
@@ -62,8 +60,16 @@ export function onStart(ev)
  {
     try
     {
+       let filePath = '';
+
+       if (ev.data.filePath)
+       {
+          filePath = path.relative(process.cwd(), ev.data.filePath);
+       }
+
        const result = escomplex.analyze(ev.data.ast);
-       console.log(`esdoc-plugin-escomplex - onHandleAST - result: ${JSON.stringify(result)}`);
+
+       console.log(`esdoc-plugin-escomplex - onHandleAST - filePath: ${filePath} - result: ${JSON.stringify(result)}`);
     }
     catch (err)
     {
